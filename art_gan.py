@@ -21,7 +21,7 @@ GENERATE_RES = 3
 IMAGE_SIZE = 128 # rows/cols
 IMAGE_CHANNELS = 3
 
-training_data = np.load(‘murakami_data.npy’)
+training_data = np.load('murakami_data.npy')
 
 def build_discriminator(image_shape):
     model = Sequential()
