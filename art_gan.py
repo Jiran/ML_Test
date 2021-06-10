@@ -93,11 +93,11 @@ def save_images(cnt, noise):
                         IMAGE_SIZE] = generated_images[image_count] * 255
             image_count += 1
     output_path = 'output'
-        if not os.path.exists(output_path):
-            os.makedirs(output_path)
+    if not os.path.exists(output_path):
+        os.makedirs(output_path)
     filename = os.path.join(output_path, f"trained-{cnt}.png")
-        im = Image.fromarray(image_array)
-        im.save(filename)
+    im = Image.fromarray(image_array)
+    im.save(filename)
 
 image_shape = (IMAGE_SIZE, IMAGE_SIZE, IMAGE_CHANNELS)
 optimizer = Adam(1.5e-4, 0.5)
